@@ -5,13 +5,7 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-		<div class="social-links">
+		<div class="social-links bg-orange-200">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
 				<span class="sr-only">Follow Astro on Mastodon</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
@@ -39,6 +33,17 @@ import { SITE_TITLE } from '../consts';
 					></path></svg
 				>
 			</a>
+		</div>
+		<!-- <h2><a href="/">{SITE_TITLE}</a></h2> -->
+		<a href="/"><img src="Logo.jpg" alt="Logo Kemenkumham RI" class="w-20"></a>
+		<div class="internal-links">
+			<HeaderLink href="/" class="hover:bg-sky-500">Profil</HeaderLink>
+			<HeaderLink href="/blog" class="hover:bg-sky-500">Unit Kerja</HeaderLink>
+			<HeaderLink href="/about" class="hover:bg-sky-500">Produk Hukum</HeaderLink>
+			<HeaderLink href="/about" class="hover:bg-sky-500">Informasi Publik</HeaderLink>
+			<HeaderLink href="/about" class="hover:bg-sky-500">Publikasi</HeaderLink>
+			<HeaderLink href="/about" class="hover:bg-sky-500">Layanan Publik</HeaderLink>
+			<HeaderLink href="/about" class="hover:bg-sky-500">ICON</HeaderLink>
 		</div>
 	</nav>
 </header>
