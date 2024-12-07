@@ -1,5 +1,6 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import ThemeIcon from './ThemeIcon.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
@@ -10,80 +11,128 @@ import { SITE_TITLE } from '../consts';
 			<a href="/"><img src="Logo.jpg" alt="Logo Kemenkumham RI" class="min-w-48 w-48"></a>
   	</div>
   	<div class="navbar-center hidden lg:flex">
-      <div class="dropdown dropdown-hover dropdown-bottom">
+      <!-- <div class="dropdown dropdown-hover dropdown-bottom"> -->
+      <div class="dropdown dropdown-hover">
         <div tabindex="0" role="button" class="btn btn-ghost m-1">Profil 🢓</div>
-        <ul tabindex="0" class="dropdown-content menu xl:menu-horizontal lg:min-w-max bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-          <li>
-            <a>Tentang Kementerian Hukum RI</a>
+        <!-- <ul tabindex="0" class="dropdown-content menu menu-horizontal lg:min-w-max bg-base-100 rounded-box z-[1] w-52 p-2 shadow"> -->
+        <ul tabindex="0" class="dropdown-content menu  lg:min-w-max bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li class="m-1">
+            <a class="p-1">Tentang Kementerian Hukum RI</a>
             <ul>
-              <li><a href="#">Sejarah Kementerian Hukum RI</a></li>
-              <li><a href="#">Visi, Misi dan Tata Nilai</a></li>
-              <li><a href="#">Tugas Pokok dan Fungsi</a></li>
-              <li><a href="#">Struktur Organisasi</a></li>
-              <li><a href="#">Profil Pejabat</a></li>
-              <li><a href="#">Universitas Korporat</a></li>
-              <li><a href="#">Identitas Logo</a></li>
-              <li><a href="#">Kerjasama</a></li>
-              <li><a href="#">Kontak Kami</a></li>
+              <li><a href="#" class="p-1">Sejarah Kementerian Hukum RI</a></li>
+              <li><a href="#" class="p-1">Visi, Misi dan Tata Nilai</a></li>
+              <li><a href="#" class="p-1">Tugas Pokok dan Fungsi</a></li>
+              <li><a href="#" class="p-1">Struktur Organisasi</a></li>
+              <li><a href="#" class="p-1">Profil Pejabat</a></li>
+              <li><a href="#" class="p-1">Universitas Korporat</a></li>
+              <li><a href="#" class="p-1">Identitas Logo</a></li>
+              <li><a href="#" class="p-1">Kerjasama</a></li>
+              <li><a href="#" class="p-1">Kontak Kami</a></li>
             </ul>
           </li>
-          <li>
-            <a>Visi Misi dan Tata Nilai</a>
+          <li class="m-1">
+            <a class="p-1">Pimpinan Unit Utama</a>
             <ul>
-              <li><a href="#">Sejarah Kementerian Hukum RI</a></li>
-              <li><a href="#">Visi, Misi dan Tata Nilai</a></li>
-              <li><a href="#">Tugas Pokok dan Fungsi</a></li>
-              <li><a href="#">Struktur Organisasi</a></li>
-              <li><a href="#">Profil Pejabat</a></li>
-              <li><a href="#">Universitas Korporat</a></li>
-              <li><a href="#">Identitas Logo</a></li>
-              <li><a href="#">Kerjasama</a></li>
-              <li><a href="#">Kontak Kami</a></li>
+              <li><a href="#" class="p-1">Sekretariat Jenderal</a></li>
+              <li><a href="#" class="p-1">Direktorat Jenderal Peraturan Perundang-undangan</a></li>
+              <li><a href="#" class="p-1">Direktorat Jenderal Administrasi Hukum Umum</a></li>
+              <li><a href="#" class="p-1">Direktorat Jenderal Kekayaan Intelektual</a></li>
+              <li><a href="#" class="p-1">Inspektorat Jenderal</a></li>
+              <li><a href="#" class="p-1">Badan Pembinaan Hukum Nasional</a></li>
+              <li><a href="#" class="p-1">Badan Strategi Kebijakan Hukum</a></li>
+              <li><a href="#" class="p-1">BPSDM Hukum</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover dropdown-bottom">
+        <div tabindex="0" role="button" class="btn btn-ghost m-1">Unit Kerja 🢓</div>
+        <ul tabindex="0" class="dropdown-content menu lg:min-w-max bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li>
+            <a class="p-1">Tentang Kementerian Hukum RI</a>
+            <ul>
+              <li><a href="#" class="p-1">Sejarah Kementerian Hukum RI</a></li>
+              <li><a href="#" class="p-1">Visi, Misi dan Tata Nilai</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover dropdown-bottom">
+        <div tabindex="0" role="button" class="btn btn-ghost m-1">Produk Hukum 🢓</div>
+        <ul tabindex="0" class="dropdown-content menu lg:min-w-max bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li>
+            <a class="p-1">Tentang Kementerian Hukum RI</a>
+            <ul>
+              <li><a href="#" class="p-1">Sejarah Kementerian Hukum RI</a></li>
+              <li><a href="#" class="p-1">Visi, Misi dan Tata Nilai</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover dropdown-bottom">
+        <div tabindex="0" role="button" class="btn btn-ghost m-1">Informasi Publik 🢓</div>
+        <ul tabindex="0" class="dropdown-content menu lg:min-w-max bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li>
+            <a class="p-1">Tentang Kementerian Hukum RI</a>
+            <ul>
+              <li><a href="#" class="p-1">Sejarah Kementerian Hukum RI</a></li>
+              <li><a href="#" class="p-1">Visi, Misi dan Tata Nilai</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-hover dropdown-bottom">
+        <div tabindex="0" role="button" class="btn btn-ghost m-1">Publikasi 🢓</div>
+        <ul tabindex="0" class="dropdown-content menu lg:min-w-max bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li>
+            <a class="p-1">Tentang Kementerian Hukum RI</a>
+            <ul>
+              <li><a href="#" class="p-1">Sejarah Kementerian Hukum RI</a></li>
+              <li><a href="#" class="p-1">Visi, Misi dan Tata Nilai</a></li>
             </ul>
           </li>
         </ul>
       </div>
     	<ul class="menu menu-horizontal px-1">
-      	<li>
-        	<details>
-          	<summary class="text-black">Unit Kerja</summary>
-          	<ul class="p-2">
-            	<li><a>Sejarah Kementerian Hukum RI</a></li>
-            	<li><a>Visi Misi dan Tata Nilai</a></li>
-          	</ul>
-        	</details>
-      	</li>
-      	<li>
-        	<details>
-          	<summary class="text-black">Produk Hukum</summary>
-          	<ul class="p-2">
-            	<li><a>Sejarah Kementerian Hukum RI</a></li>
-            	<li><a>Visi Misi dan Tata Nilai</a></li>
-          	</ul>
-        	</details>
-      	</li>
-      	<li>
-        	<details>
-          	<summary class="text-black">Informasi Publik</summary>
-          	<ul class="p-2">
-            	<li><a>Sejarah Kementerian Hukum RI</a></li>
-            	<li><a>Visi Misi dan Tata Nilai</a></li>
-          	</ul>
-        	</details>
-      	</li>
-      	<li>
-        	<details>
-          	<summary class="text-black">Publikasi</summary>
-          	<ul class="p-2">
-            	<li><a>Sejarah Kementerian Hukum RI</a></li>
-            	<li><a>Visi Misi dan Tata Nilai</a></li>
-          	</ul>
-        	</details>
-      	</li>
-      	<li><a class="text-black">Layanan Publik</a></li>
-    	</ul>
+      	<li><a class=" btn btn-ghost">Layanan Publik</a></li>
+      </ul>
   	</div>
   	<div class="navbar-end">
+        <!-- <ThemeIcon /> -->
+      <label class="grid cursor-pointer place-items-center">
+  <input
+    type="checkbox"
+    value="synthwave"
+    class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1" />
+  <svg
+    class="stroke-base-100 fill-base-100 col-start-1 row-start-1"
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5" />
+    <path
+      d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+  </svg>
+  <svg
+    class="stroke-base-100 fill-base-100 col-start-2 row-start-1"
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</label>
     	<!-- <a class="btn">Button</a> -->
     	<div class="dropdown">
       	<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
